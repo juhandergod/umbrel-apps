@@ -1,0 +1,33 @@
+manifestVersion: 1
+id: motioneye
+category: automation
+name: MotionEye
+version: "0.42.1"
+tagline: A complete and local NVR.
+description: >-
+  motionEye is an online interface for the software motion, a video surveillance program with motion detection.
+releaseNotes: >-
+  What's new:
+
+  - Fixed smart mask sluggishness limits.
+  - Fixed floating image dimensions when generating media preview.
+  - Fixed filename validation regex.
+  - Added support for nvenc (credits go to @HawtDogFlvrWtr).
+  
+  Full release notes are available at https://github.com/motioneye-project/motioneye/releases/
+developer: Tamás Juhász
+website: https://github.com/motioneye-project/motioneye
+dependencies:
+  - bitcoin
+  - electrs
+repo: https://github.com/motioneye-project/motioneye
+port: 8765
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: "admin"
+defaultPassword: ""
+submitter: juhandergod
+submission: https://github.com/getumbrel/umbrel/pull/1100
