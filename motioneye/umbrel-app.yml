@@ -15,7 +15,7 @@ releaseNotes: >-
   - Added support for nvenc (credits go to @HawtDogFlvrWtr).
   
   Full release notes are available at https://github.com/motioneye-project/motioneye/releases/
-developer: Tamás Juhász
+developer: motioneye-project
 website: https://github.com/motioneye-project/motioneye
 dependencies: []
 repo: https://github.com/motioneye-project/motioneye
