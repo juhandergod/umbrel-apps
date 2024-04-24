@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: motioneye_server_1
-      APP_PORT: 8765
+      APP_PORT: 9001
       PROXY_AUTH_ADD: "false"
 
   web:
@@ -18,3 +18,5 @@ services:
     restart: unless-stopped
     ports:
       - "8081:8081"
+    environment:
+      - port=9001
