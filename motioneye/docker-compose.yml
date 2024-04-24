@@ -1,4 +1,4 @@
-version: '3.7'
+version: "3.7"
 
 services:
   app_proxy:
@@ -9,9 +9,12 @@ services:
 
   web:
     image: ccrisan/motioneye:master-amd64
+    init: true
     hostname: "${DEVICE_HOSTNAME}"
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ${APP_DATA_DIR}/data/motioneye:/etc/motioneye
-      - ${APP_DATA_DIR}/data/lib/motioneye:/var/lib/motioneye
+      - ${APP_DATA_DIR}/data/config:/etc/motioneye
+      - ${APP_DATA_DIR}/data/storage:/var/lib/motioneye
     restart: unless-stopped
+    ports:
+      - "8081:8081"
