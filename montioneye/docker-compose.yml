@@ -7,10 +7,9 @@ services:
       APP_PORT: 8765
       PROXY_AUTH_ADD: "false"
 
-  motioneye:
-    container_name: motioneye
+  web:
     image: ccrisan/motioneye:master-amd64
-    hostname: motioneye
+    hostname: "${DEVICE_HOSTNAME}"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ${APP_DATA_DIR}/data/motioneye:/etc/motioneye
