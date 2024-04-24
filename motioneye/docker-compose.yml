@@ -1,20 +1,13 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: motioneye_server_1
-      APP_PORT: 8765
-      PROXY_AUTH_ADD: "false"
-
   web:
     image: ccrisan/motioneye:master-amd64
-    init: true
-    hostname: "${DEVICE_HOSTNAME}"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ${APP_DATA_DIR}/data/config:/etc/motioneye
       - ${APP_DATA_DIR}/data/storage:/var/lib/motioneye
-    restart: unless-stopped
+    restart: always
     ports:
       - "8081:8081"
+      - "8765:8765"
