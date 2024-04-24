@@ -17,6 +17,7 @@ releaseNotes: >-
   Full release notes are available at https://github.com/motioneye-project/motioneye/releases/
 developer: Tamás Juhász
 website: https://github.com/motioneye-project/motioneye
+dependencies: []
 repo: https://github.com/motioneye-project/motioneye
 port: 8765
 gallery:
